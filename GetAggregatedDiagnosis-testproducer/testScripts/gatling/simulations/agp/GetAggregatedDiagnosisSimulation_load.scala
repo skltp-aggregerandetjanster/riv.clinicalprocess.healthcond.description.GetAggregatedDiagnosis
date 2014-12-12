@@ -16,7 +16,7 @@ class GetAggregatedDiagnosisSimulation_load extends Simulation {
   val maxWaitMs      = 5000 milliseconds
 
   // System under test
-  val _baseURL        = "https://33.33.33.33:20000"
+  val _baseURL        = "https://test.esb.ntjp.se:443"
   val _contextPath    = "/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21"
 
   //local producer
@@ -39,7 +39,7 @@ class GetAggregatedDiagnosisSimulation_load extends Simulation {
 
   val scn = scenario("GetAggregatedDiagnosis")
     .during(testTimeSecs) {
-      feed(csv("patients.csv").random)
+      feed(csv("patients_diagnosis.csv").random)
       .exec(
         http("GetAggregatedDiagnosis ${patientid} - ${name}")
           .post(_contextPath)

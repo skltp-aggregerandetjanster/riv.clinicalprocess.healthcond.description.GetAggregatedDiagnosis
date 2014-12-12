@@ -39,7 +39,7 @@ class GetAggregatedDiagnosisSimulation_robustness extends Simulation {
 
   val scn = scenario("GetAggregatedDiagnosis")
     .during(testTimeSecs) {
-      feed(csv("patients.csv").random)
+      feed(csv("patients_diagnosis.csv").random)
       .exec(
         http("GetAggregatedDiagnosis ${patientid} - ${name}")
           .post(_contextPath)
