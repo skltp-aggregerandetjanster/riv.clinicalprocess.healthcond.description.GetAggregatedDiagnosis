@@ -18,7 +18,7 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
 
     <groupId>se.skltp.aggregatingservices.clinicalprocess.healthcond.description</groupId>
 		<artifactId>GetAggregatedDiagnosis-parent</artifactId>
-		<version>1.0.0-RC5-SNAPSHOT</version>
+		<version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>GetAggregatedDiagnosis-parent</name>
 
@@ -32,7 +32,6 @@ DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT YOU ARE DOI
     <modules>
       <module>GetAggregatedDiagnosis</module>
       <module>GetAggregatedDiagnosis-teststub</module>
-			<module>GetAggregatedDiagnosis-testproducer</module>
 			<module>GetAggregatedDiagnosis-schemas</module>
     </modules>
 

@@ -7,7 +7,7 @@ import riv.clinicalprocess.healthcond.description._2.DiagnosisBodyType;
 import riv.clinicalprocess.healthcond.description._2.DiagnosisType;
 import riv.clinicalprocess.healthcond.description._2.PatientSummaryHeaderType;
 import riv.clinicalprocess.healthcond.description._2.PersonIdType;
-import se.riv.clinicalprocess.healthcond.description.getdiagnosisresponder.v2.GetDiagnosisResponseType;
+import riv.clinicalprocess.healthcond.description.getdiagnosisresponder.v2.GetDiagnosisResponseType;
 import se.skltp.agp.test.producer.TestProducerDb;
 
 public class GetAggregatedDiagnosisTestProducerDb extends TestProducerDb {

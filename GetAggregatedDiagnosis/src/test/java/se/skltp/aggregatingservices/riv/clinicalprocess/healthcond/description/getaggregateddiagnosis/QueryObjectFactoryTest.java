@@ -15,8 +15,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
 import riv.clinicalprocess.healthcond.description._2.PersonIdType;
-import se.riv.clinicalprocess.healthcond.description.getdiagnosisresponder.v2.GetDiagnosisType;
-import se.riv.clinicalprocess.healthcond.description.getdiagnosisresponder.v2.ObjectFactory;
+import riv.clinicalprocess.healthcond.description.getdiagnosisresponder.v2.GetDiagnosisType;
+import riv.clinicalprocess.healthcond.description.getdiagnosisresponder.v2.ObjectFactory;
 import se.skltp.agp.riv.itintegration.engagementindex.findcontentresponder.v1.FindContentType;
 import se.skltp.agp.service.api.QueryObject;
 import se.skltp.agp.test.producer.TestProducerDb;
