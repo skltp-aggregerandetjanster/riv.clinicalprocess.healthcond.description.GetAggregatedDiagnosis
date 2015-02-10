@@ -10,7 +10,7 @@
   <parent>
     <groupId>se.skltp.aggregatingservices.clinicalprocess.healthcond.description</groupId>
     <artifactId>GetAggregatedDiagnosis-parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>GetAggregatedDiagnosis</artifactId>
