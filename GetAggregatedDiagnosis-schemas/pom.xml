@@ -8,7 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>se.skltp.aggregatingservices.clinicalprocess.healthcond.description</groupId>
+    <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.description</groupId>
     <artifactId>GetAggregatedDiagnosis-parent</artifactId>
     <version>1.0.1-SNAPSHOT</version>
   </parent>
