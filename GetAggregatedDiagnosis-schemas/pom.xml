@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT 
-  YOU ARE DOING! [soi-toolkit.gen.version=0.6.2-SNAPSHOT] [soi-toolkit.gen.type=schemas] 
+<!-- DON'T CHANGE THE CONTENT OF THIS COMMENT UNLESS YOU REALLY KNOW WHAT
+  YOU ARE DOING! [soi-toolkit.gen.version=0.6.2-SNAPSHOT] [soi-toolkit.gen.type=schemas]
   [soi-toolkit.gen.createDate=2014-07-23T12:17:32.269+02:00] [soi-toolkit.gen.artifactId=GetAggregatedDiagnosis] -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
@@ -73,7 +72,7 @@
       </plugin>
 
       <plugin>
-        <!-- Create a zip-file only containing wsdl & xsd files, i.e. no 
+        <!-- Create a zip-file only containing wsdl & xsd files, i.e. no
              JAX-WS/JAXB-generated artifacts, for example for a Microsoft .Net C# app -->
         <artifactId>maven-assembly-plugin</artifactId>
         <dependencies>
