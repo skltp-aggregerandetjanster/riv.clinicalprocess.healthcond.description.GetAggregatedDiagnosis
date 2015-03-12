@@ -12,6 +12,7 @@ import static se.skltp.agp.test.producer.TestProducerDb.TEST_BO_ID_ONE_HIT;
 import static se.skltp.agp.test.producer.TestProducerDb.TEST_LOGICAL_ADDRESS_1;
 import static se.skltp.agp.test.producer.TestProducerDb.TEST_LOGICAL_ADDRESS_2;
 import static se.skltp.agp.test.producer.TestProducerDb.TEST_LOGICAL_ADDRESS_3;
+
 import static se.skltp.agp.test.producer.TestProducerDb.TEST_RR_ID_FAULT_INVALID_ID;
 import static se.skltp.agp.test.producer.TestProducerDb.TEST_RR_ID_MANY_HITS;
 import static se.skltp.agp.test.producer.TestProducerDb.TEST_RR_ID_ONE_HIT;
@@ -102,7 +103,7 @@ public class GetAggregatedDiagnosisIntegrationTest extends AbstractAggregateInte
     @Test
     public void test_ok_one_hit() {
     	
-    	List<ProcessingStatusRecordType> statusList = doTest(TEST_RR_ID_ONE_HIT, 1, new ExpectedTestData(TEST_BO_ID_ONE_HIT, TEST_LOGICAL_ADDRESS_1));
+    	List<ProcessingStatusRecordType> statusList = doTest(TEST_RR_ID_ONE_HIT, 2, new ExpectedTestData(TEST_BO_ID_ONE_HIT, TEST_LOGICAL_ADDRESS_1));
 
     	assertProcessingStatusDataFromSource(statusList.get(0), TEST_LOGICAL_ADDRESS_1);
     }
