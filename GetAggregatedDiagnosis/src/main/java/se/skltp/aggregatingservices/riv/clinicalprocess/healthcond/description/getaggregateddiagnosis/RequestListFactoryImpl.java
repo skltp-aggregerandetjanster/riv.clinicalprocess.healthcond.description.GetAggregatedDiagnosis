@@ -2,7 +2,6 @@ package se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.description.
 
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -29,9 +28,14 @@ public class RequestListFactoryImpl implements RequestListFactory {
 	 * Filtrera svarsposter från i EI (ei-engagement) baserat parametrar i GetDiagnosis requestet (req).
 	 * Följande villkor måste vara sanna för att en svarspost från EI skall tas med i svaret:
 	 * 
-	 * 1. req.getSourceSystemHSAId == null or req.getSourceSystemHSAId == "" or req.getSourceSystemHSAId == ei-engagement.logicalAddress
+	 * req.getSourceSystemHSAId == null 
+	 *   or 
+	 * req.getSourceSystemHSAId == "" 
+	 *   or 
+	 * req.getSourceSystemHSAId == ei-engagement.logicalAddress
 	 * 
-	 * Svarsposter från EI som passerat filtreringen grupperas på fältet sourceSystem samt postens fält logicalAddress (= PDL-enhet) samlas i listan careUnitId per varje sourceSystem
+	 * Svarsposter från EI som passerat filtreringen grupperas på fältet sourceSystem 
+	 * samt postens fält logicalAddress (= PDL-enhet) samlas i listan careUnitId per varje sourceSystem
 	 * 
 	 * Ett anrop görs per funnet sourceSystem med följande värden i anropet:
 	 * 
@@ -42,13 +46,8 @@ public class RequestListFactoryImpl implements RequestListFactory {
 	public List<Object[]> createRequestList(QueryObject qo, FindContentResponseType src) {
 
 		GetDiagnosisType originalRequest = (GetDiagnosisType)qo.getExtraArg();
-		// TODO: CHANGE GENERATED CODE - START
-		
-		//Date reqFrom = parseTs(originalRequest.getFromDate());
-		//Date reqTo   = parseTs(originalRequest.getToDate());
 		
 		String reqCareUnit = originalRequest.getSourceSystemHSAId();
-		// TODO: CHANGE GENERATED CODE - END
 
 		FindContentResponseType eiResp = (FindContentResponseType)src;
 		List<EngagementType> inEngagements = eiResp.getEngagement();
@@ -58,15 +57,7 @@ public class RequestListFactoryImpl implements RequestListFactory {
 		Map<String, List<String>> sourceSystem_pdlUnitList_map = new HashMap<String, List<String>>();
 		
 		for (EngagementType inEng : inEngagements) {
-
-			// Filter
-			// TODO: CHANGE GENERATED CODE - START
-			//if (isBetween(reqFrom, reqTo, inEng.getMostRecentContent()) &&
-			//	isPartOf(reqCareUnit, inEng.getLogicalAddress())) {
-			
 			if (isPartOf(reqCareUnit, inEng.getLogicalAddress())) {
-			// TODO: CHANGE GENERATED CODE - END
-
 				// Add pdlUnit to source system
 				log.debug("Add SS: {} for PDL unit: {}", inEng.getSourceSystem(), inEng.getLogicalAddress());
 				addPdlUnitToSourceSystem(sourceSystem_pdlUnitList_map, inEng.getSourceSystem(), inEng.getLogicalAddress());
@@ -74,27 +65,23 @@ public class RequestListFactoryImpl implements RequestListFactory {
 		}
 
 		// Prepare the result of the transformation as a list of request-payloads, 
-		// one payload for each unique logical-address (e.g. source system since we are using systemaddressing),
+		// one payload for each unique logical-address (e.g. source system since we are using system addressing),
 		// each payload built up as an object-array according to the JAX-WS signature for the method in the service interface
 		List<Object[]> reqList = new ArrayList<Object[]>();
 		
 		for (Entry<String, List<String>> entry : sourceSystem_pdlUnitList_map.entrySet()) {
-
 			String sourceSystem = entry.getKey();
 
-			if (log.isInfoEnabled()) log.info("Calling source system using logical address {} for subject of care id {}", sourceSystem, originalRequest.getPatientId().getId());
-
-			// TODO: CHANGE GENERATED CODE - START
+			if (log.isInfoEnabled()) {
+			    log.info("Calling source system using logical address {} for subject of care id {}", 
+			            sourceSystem, originalRequest.getPatientId().getId());
+			}
 			GetDiagnosisType request = originalRequest;
-			// TODO: CHANGE GENERATED CODE - END
-			
 			Object[] reqArr = new Object[] {sourceSystem, request};
-			
 			reqList.add(reqArr);
 		}
 
 		log.debug("Transformed payload: {}", reqList);
-
 		return reqList;
 	}
 
@@ -126,11 +113,8 @@ public class RequestListFactoryImpl implements RequestListFactory {
 	}
 
 	boolean isPartOf(String careUnitId, String careUnit) {
-		
 		log.debug("Check presence of {} in {}", careUnit, careUnitId);
-		
 		if (StringUtils.isBlank(careUnitId)) return true;
-		
 		return careUnitId.equals(careUnit);
 	}
 
