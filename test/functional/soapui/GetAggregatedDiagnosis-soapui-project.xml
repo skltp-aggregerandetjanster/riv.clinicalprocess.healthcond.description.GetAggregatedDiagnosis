@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default" name="GetAggregatedDiagnosis-functionaltests" resourceRoot="" soapui-version="5.0.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default" name="GetAggregatedDiagnosis" resourceRoot="" soapui-version="5.0.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
   <con:entry key="Environment" value="Default"/>
   <con:entry key="Global Properties" value=""/>
   <con:entry key="TestSuite" value="TearDown EI"/>
@@ -1051,7 +1051,7 @@
       <xs:any maxOccurs="unbounded" minOccurs="0" namespace="##other" processContents="lax"/>
     </xs:sequence>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://${#Project#serviceEndpoint}:8070/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis" name="GetDiagnosis" bindingOperationName="GetDiagnosis" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="194911172296 - Sven Sturesson" outgoingWss="" incomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://${#Project#serviceEndpoint}:8070/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint></con:endpoints><con:operation isOneWay="false" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis" name="GetDiagnosis" bindingOperationName="GetDiagnosis" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="194911172296 - Sven Sturesson" outgoingWss="" incomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}:8070/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1077,7 +1077,7 @@
          <!--You may enter ANY elements at this point-->
       </urn1:GetDiagnosis>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:call><con:call name="121212121212 - Tolvan Tolvansson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
+</soapenv:Envelope>]]></con:request><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:call><con:call name="121212121212 - Tolvan Tolvansson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}:8070/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1103,7 +1103,7 @@
          <!--You may enter ANY elements at this point-->
       </urn1:GetDiagnosis>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194804032094 - Laban Meijer"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
+</soapenv:Envelope>]]></con:request><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194804032094 - Laban Meijer"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}:8070/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1129,7 +1129,7 @@
          <!--You may enter ANY elements at this point-->
       </urn1:GetDiagnosis>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:call><con:call name="188803099368 - Agda Andersson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.esb.ntjp.se:443/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
+</soapenv:Envelope>]]></con:request><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:call><con:call name="188803099368 - Agda Andersson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}:8070/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
       
@@ -1145,7 +1145,7 @@
          </urn1:patientId>
       </urn1:GetDiagnosis>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:call><con:call name="198611062384 - Ulla Alm"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
+</soapenv:Envelope>]]></con:request><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:call><con:call name="198611062384 - Ulla Alm"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}:8070/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1171,7 +1171,7 @@
          <!--You may enter ANY elements at this point-->
       </urn1:GetDiagnosis>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:call><con:call name="192011189228 - Gunbritt Boden"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
+</soapenv:Envelope>]]></con:request><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:call><con:call name="192011189228 - Gunbritt Boden"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://${#Project#serviceEndpoint}:8070/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1197,7 +1197,7 @@
          <!--You may enter ANY elements at this point-->
       </urn1:GetDiagnosis>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="UpdateResponderBinding" type="wsdl" bindingName="{urn:riv:itintegration:engagementindex:Update:1:rivtabp21}UpdateResponderBinding" soapVersion="1_1" anonymous="optional" definition="http://${#Project#serviceEndpoint}:8070/vp/Update/1/rivtabp21?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://33.33.33.33:8070/vp/Update/1/rivtabp21?wsdl"><con:part><con:url>http://33.33.33.33:8070/vp/Update/1/rivtabp21?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="UpdateInteraction" targetNamespace="urn:riv:itintegration:engagementindex:Update:1:rivtabp21" xmlns:itr="urn:riv:itintegration:registry:1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tjsi="urn:riv:itintegration:engagementindex:UpdateInitiator:1" xmlns:tjsr="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:tns="urn:riv:itintegration:engagementindex:Update:1:rivtabp21" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+</soapenv:Envelope>]]></con:request><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="UpdateResponderBinding" type="wsdl" bindingName="{urn:riv:itintegration:engagementindex:Update:1:rivtabp21}UpdateResponderBinding" soapVersion="1_1" anonymous="optional" definition="http://${#Project#serviceEndpoint}:8070/vp/Update/1/rivtabp21?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://33.33.33.33:8070/vp/Update/1/rivtabp21?wsdl"><con:part><con:url>http://33.33.33.33:8070/vp/Update/1/rivtabp21?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="UpdateInteraction" targetNamespace="urn:riv:itintegration:engagementindex:Update:1:rivtabp21" xmlns:itr="urn:riv:itintegration:registry:1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tjsi="urn:riv:itintegration:engagementindex:UpdateInitiator:1" xmlns:tjsr="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:tns="urn:riv:itintegration:engagementindex:Update:1:rivtabp21" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <wsdl:types>
     <xs:schema targetNamespace="urn:riv:itintegration:engagementindex:Update:1:rivtabp21">
       <xs:import namespace="urn:riv:itintegration:engagementindex:UpdateResponder:1" schemaLocation="http://33.33.33.33:8070/vp/Update/1/rivtabp21?xsd=UpdateResponder_1.0.xsd"/>
@@ -1387,37 +1387,10 @@
    </soapenv:Header>
    <soapenv:Body>
       <urn1:Update>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>false</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>188803099368</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER1</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER1</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>false</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>188803099368</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER2</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER2</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
+         <urn1:engagementTransaction />
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="121212121212 - Tolvan Tolvansson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="121212121212 - Tolvan Tolvansson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1428,11 +1401,11 @@
             <urn2:engagement>
                <urn2:registeredResidentIdentification>121212121212</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER1</urn2:logicalAddress>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-4</urn2:logicalAddress>
                <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
                <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER1</urn2:sourceSystem>
+               <urn2:sourceSystem>HSA-ID-4</urn2:sourceSystem>
                <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
                <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
             </urn2:engagement>
@@ -1442,18 +1415,32 @@
             <urn2:engagement>
                <urn2:registeredResidentIdentification>121212121212</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER5</urn2:logicalAddress>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-5</urn2:logicalAddress>
                <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
                <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER5</urn2:sourceSystem>
+               <urn2:sourceSystem>HSA-ID-5</urn2:sourceSystem>
+               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
+               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
+            </urn2:engagement>
+         </urn1:engagementTransaction>
+         <urn1:engagementTransaction>
+            <urn2:deleteFlag>false</urn2:deleteFlag>
+            <urn2:engagement>
+               <urn2:registeredResidentIdentification>121212121212</urn2:registeredResidentIdentification>
+               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-6</urn2:logicalAddress>
+               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
+               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
+               <urn2:sourceSystem>HSA-ID-6</urn2:sourceSystem>
                <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
                <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
             </urn2:engagement>
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194804032094 - Laban Meijer"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194804032094 - Laban Meijer"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1464,46 +1451,18 @@
             <urn2:engagement>
                <urn2:registeredResidentIdentification>194804032094</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER1</urn2:logicalAddress>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-7</urn2:logicalAddress>
                <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
                <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER1</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>false</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>194804032094</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER2</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER2</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>false</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>194804032094</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER3</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER3</urn2:sourceSystem>
+               <urn2:sourceSystem>HSA-ID-7</urn2:sourceSystem>
                <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
                <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
             </urn2:engagement>
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194911172296 - Sven Sturesson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="194911172296 - Sven Sturesson"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1514,18 +1473,32 @@
             <urn2:engagement>
                <urn2:registeredResidentIdentification>194911172296</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER3</urn2:logicalAddress>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-1</urn2:logicalAddress>
                <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
                <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER3</urn2:sourceSystem>
+               <urn2:sourceSystem>HSA-ID-1</urn2:sourceSystem>
+               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
+               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
+            </urn2:engagement>
+         </urn1:engagementTransaction>
+         <urn1:engagementTransaction>
+            <urn2:deleteFlag>false</urn2:deleteFlag>
+            <urn2:engagement>
+               <urn2:registeredResidentIdentification>194911172296</urn2:registeredResidentIdentification>
+               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-2</urn2:logicalAddress>
+               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
+               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
+               <urn2:sourceSystem>HSA-ID-2</urn2:sourceSystem>
                <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
                <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
             </urn2:engagement>
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="198611062384 - Ulla Alm"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="198611062384 - Ulla Alm"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1536,11 +1509,11 @@
             <urn2:engagement>
                <urn2:registeredResidentIdentification>198611062384</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER1</urn2:logicalAddress>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-1</urn2:logicalAddress>
                <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
                <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER1</urn2:sourceSystem>
+               <urn2:sourceSystem>HSA-ID-1</urn2:sourceSystem>
                <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
                <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
             </urn2:engagement>
@@ -1550,11 +1523,11 @@
             <urn2:engagement>
                <urn2:registeredResidentIdentification>198611062384</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER2</urn2:logicalAddress>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-2</urn2:logicalAddress>
                <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
                <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER2</urn2:sourceSystem>
+               <urn2:sourceSystem>HSA-ID-2</urn2:sourceSystem>
                <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
                <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
             </urn2:engagement>
@@ -1564,32 +1537,47 @@
             <urn2:engagement>
                <urn2:registeredResidentIdentification>198611062384</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER4</urn2:logicalAddress>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-3</urn2:logicalAddress>
                <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
                <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER4</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>false</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>198611062384</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER6</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER6</urn2:sourceSystem>
+               <urn2:sourceSystem>HSA-ID-3</urn2:sourceSystem>
                <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
                <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
             </urn2:engagement>
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="PingForConfigurationResponderBinding" type="wsdl" bindingName="{urn:riv:itintegration:monitoring:PingForConfiguration:1:rivtabp21}PingForConfigurationResponderBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8081/agp/getaggregateddiagnosis/itintegration/monitoring/PingForConfiguration/1/rivtabp21?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8081/agp/getaggregateddiagnosis/itintegration/monitoring/PingForConfiguration/1/rivtabp21?wsdl"><con:part><con:url>http://localhost:8081/agp/getaggregateddiagnosis/itintegration/monitoring/PingForConfiguration/1/rivtabp21?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="PingForConfigurationInteraction" targetNamespace="urn:riv:itintegration:monitoring:PingForConfiguration:1:rivtabp21" xmlns:rgy="urn:riv:itintegration:registry:1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tjsi="urn:riv:itintegration:monitoring:PingForConfigurationInitiator:1" xmlns:tjsr="urn:riv:itintegration:monitoring:PingForConfigurationResponder:1" xmlns:tns="urn:riv:itintegration:monitoring:PingForConfiguration:1:rivtabp21" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call><con:call name="192011189228 - Gunbritt Boden"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:Update>
+         <urn1:engagementTransaction>
+            <urn2:deleteFlag>false</urn2:deleteFlag>
+            <urn2:engagement>
+               <urn2:registeredResidentIdentification>192011189228</urn2:registeredResidentIdentification>
+               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-1</urn2:logicalAddress>
+               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
+               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
+               <urn2:sourceSystem>HSA-ID-1</urn2:sourceSystem>
+               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
+               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
+            </urn2:engagement>
+         </urn1:engagementTransaction>
+      </urn1:Update>
+   </soapenv:Body>
+</soapenv:Envelope>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="PingForConfigurationResponderBinding" type="wsdl" bindingName="{urn:riv:itintegration:monitoring:PingForConfiguration:1:rivtabp21}PingForConfigurationResponderBinding" soapVersion="1_1" anonymous="optional" definition="http://localhost:8081/agp/getaggregateddiagnosis/itintegration/monitoring/PingForConfiguration/1/rivtabp21?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8081/agp/getaggregateddiagnosis/itintegration/monitoring/PingForConfiguration/1/rivtabp21?wsdl"><con:part><con:url>http://localhost:8081/agp/getaggregateddiagnosis/itintegration/monitoring/PingForConfiguration/1/rivtabp21?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="PingForConfigurationInteraction" targetNamespace="urn:riv:itintegration:monitoring:PingForConfiguration:1:rivtabp21" xmlns:rgy="urn:riv:itintegration:registry:1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tjsi="urn:riv:itintegration:monitoring:PingForConfigurationInitiator:1" xmlns:tjsr="urn:riv:itintegration:monitoring:PingForConfigurationResponder:1" xmlns:tns="urn:riv:itintegration:monitoring:PingForConfiguration:1:rivtabp21" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <wsdl:types>
     <xs:schema targetNamespace="urn:riv:itintegration:monitoring:PingForConfiguration:1:rivtabp21">
       <xs:import namespace="urn:riv:itintegration:monitoring:PingForConfigurationResponder:1" schemaLocation="http://localhost:8081/agp/getaggregateddiagnosis/itintegration/monitoring/PingForConfiguration/1/rivtabp21?xsd=PingForConfigurationResponder_1.0.xsd"/>
@@ -1763,171 +1751,8 @@
          <!--You may enter ANY elements at this point-->
       </urn1:PingForConfiguration>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:monitoring:PingForConfigurationResponder:1:PingForConfiguration"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite name="SetUp TAK"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SetUp TAK manually" searchProperties="true"><con:settings/><con:testStep type="manualTestStep" name="MySQL SetUp routing"><con:description>-- Testerna behöver följande data för att kunna exekvera
--- Tjänstekontraktet måste finnas i TAK
--- Kör scriptet mot tak-schemat i önskad målmiljö
--- Kör delete scriptet som finns i städa upp efter test när du är klar
-
-SET @serviceContractNamespace = 'urn:riv:clinicalprocess:healthcond:description:GetDiagnosis:2:rivtabp21';
-SET @pathToServices = 'GetDiagnosis/2/rivtabp21';
-SET @popularDomainName = 'Hantera hälsorelaterade tillstånd, beskrivning';
-
--- Sätt upp tjänstekontrakt om det inte redan finns
--- INSERT INTO Tjanstekontrakt (beskrivning, namnrymd, version) VALUES('', @serviceContractNamespace, 0);
-
--- Sätt upp logiska adressater
-INSERT INTO LogiskAdressat (beskrivning, hsaId, version) VALUES('Används vid lasttester.', 'LT-HSAPRODUCER1', 0);
-INSERT INTO LogiskAdressat (beskrivning, hsaId, version) VALUES('Används vid lasttester.', 'LT-HSAPRODUCER2', 0);
-INSERT INTO LogiskAdressat (beskrivning, hsaId, version) VALUES('Används vid lasttester.', 'LT-HSAPRODUCER3', 0);
-INSERT INTO LogiskAdressat (beskrivning, hsaId, version) VALUES('Används vid lasttester.', 'LT-HSAPRODUCER4', 0);
-INSERT INTO LogiskAdressat (beskrivning, hsaId, version) VALUES('Används vid lasttester. Ska vara uppsatt utan anropsbehörigheter.', 'LT-HSAPRODUCER5', 0);
-INSERT INTO LogiskAdressat (beskrivning, hsaId, version) VALUES('Används vid lasttester.', 'LT-HSAPRODUCER6', 0);
-
--- Sätt upp tjänstekomponenter
-INSERT INTO Tjanstekomponent (adress, beskrivning, hsaId, version) VALUES(CONCAT('http://localhost:20007/producer_1/teststub/',@pathToServices), 'Producent för system 1 vid lasttester av Aggregerandetjänst.', CONCAT('LT-HSAProducent_1_',@popularDomainName), 0);
-INSERT INTO Tjanstekomponent (adress, beskrivning, hsaId, version) VALUES(CONCAT('http://localhost:20007/producer_2/teststub/',@pathToServices), 'Producent för system 2 vid lasttester av Aggregerandetjänst.', CONCAT('LT-HSAProducent_2_',@popularDomainName), 0);
-INSERT INTO Tjanstekomponent (adress, beskrivning, hsaId, version) VALUES(CONCAT('http://localhost:20007/producer_3/teststub/',@pathToServices), 'Producent för system 3 vid lasttester av Aggregerandetjänst.', CONCAT('LT-HSAProducent_3_',@popularDomainName), 0);
-INSERT INTO Tjanstekomponent (adress, beskrivning, hsaId, version) VALUES(CONCAT('http://localhost:20007/producer_4/teststub/',@pathToServices), 'Producent för system 4 vid lasttester av Aggregerandetjänst.', CONCAT('LT-HSAProducent_4_',@popularDomainName), 0);
-INSERT INTO Tjanstekomponent (adress, beskrivning, hsaId, version) VALUES(CONCAT('http://localhost:20007/producer_5/teststub/',@pathToServices), 'Producent för system 5 vid lasttester av Aggregerandetjänst.', CONCAT('LT-HSAProducent_5_',@popularDomainName), 0);
-INSERT INTO Tjanstekomponent (adress, beskrivning, hsaId, version) VALUES(CONCAT('http://localhost:20007/producer_6/teststub/',@pathToServices), 'Producent för system 6 vid lasttester av Aggregerandetjänst.', CONCAT('LT-HSAProducent_6_',@popularDomainName), 0);
-
-
--- Sätt upp logiska adresser
-INSERT INTO LogiskAdress (fromTidpunkt, tomTidpunkt, version, logiskAdressat_id, rivVersion_id, tjanstekontrakt_id, tjansteproducent_id)
-select '2013-10-07', '2113-10-07', 0, adressat.id, riv.id, kontrakt.id, producent.id from LogiskAdressat as adressat, RivVersion as riv,
-Tjanstekontrakt as kontrakt, Tjanstekomponent as producent
-where adressat.hsaId = 'LT-HSAPRODUCER1'
-and riv.namn = 'RIVTABP21'
-and kontrakt.namnrymd = @serviceContractNamespace
-and producent.hsaId = CONCAT('LT-HSAProducent_1_',@popularDomainName);
-
-INSERT INTO LogiskAdress (fromTidpunkt, tomTidpunkt, version, logiskAdressat_id, rivVersion_id, tjanstekontrakt_id, tjansteproducent_id)
-select '2013-10-07', '2113-10-07', 0, adressat.id, riv.id, kontrakt.id, producent.id from LogiskAdressat as adressat, RivVersion as riv,
-Tjanstekontrakt as kontrakt, Tjanstekomponent as producent
-where adressat.hsaId = 'LT-HSAPRODUCER2'
-and riv.namn = 'RIVTABP21'
-and kontrakt.namnrymd = @serviceContractNamespace
-and producent.hsaId = CONCAT('LT-HSAProducent_2_',@popularDomainName);
-
-INSERT INTO LogiskAdress (fromTidpunkt, tomTidpunkt, version, logiskAdressat_id, rivVersion_id, tjanstekontrakt_id, tjansteproducent_id)
-select '2013-10-07', '2113-10-07', 0, adressat.id, riv.id, kontrakt.id, producent.id from LogiskAdressat as adressat, RivVersion as riv,
-Tjanstekontrakt as kontrakt, Tjanstekomponent as producent
-where adressat.hsaId = 'LT-HSAPRODUCER3'
-and riv.namn = 'RIVTABP21'
-and kontrakt.namnrymd = @serviceContractNamespace
-and producent.hsaId = CONCAT('LT-HSAProducent_3_',@popularDomainName);
-
-INSERT INTO LogiskAdress (fromTidpunkt, tomTidpunkt, version, logiskAdressat_id, rivVersion_id, tjanstekontrakt_id, tjansteproducent_id)
-select '2013-10-07', '2113-10-07', 0, adressat.id, riv.id, kontrakt.id, producent.id from LogiskAdressat as adressat, RivVersion as riv,
-Tjanstekontrakt as kontrakt, Tjanstekomponent as producent
-where adressat.hsaId = 'LT-HSAPRODUCER4'
-and riv.namn = 'RIVTABP21'
-and kontrakt.namnrymd = @serviceContractNamespace
-and producent.hsaId = CONCAT('LT-HSAProducent_4_',@popularDomainName);
-
-INSERT INTO LogiskAdress (fromTidpunkt, tomTidpunkt, version, logiskAdressat_id, rivVersion_id, tjanstekontrakt_id, tjansteproducent_id)
-select '2013-10-07', '2113-10-07', 0, adressat.id, riv.id, kontrakt.id, producent.id from LogiskAdressat as adressat, RivVersion as riv,
-Tjanstekontrakt as kontrakt, Tjanstekomponent as producent
-where adressat.hsaId = 'LT-HSAPRODUCER5'
-and riv.namn = 'RIVTABP21'
-and kontrakt.namnrymd = @serviceContractNamespace
-and producent.hsaId = CONCAT('LT-HSAProducent_5_',@popularDomainName);
-
-INSERT INTO LogiskAdress (fromTidpunkt, tomTidpunkt, version, logiskAdressat_id, rivVersion_id, tjanstekontrakt_id, tjansteproducent_id)
-select '2013-10-07', '2113-10-07', 0, adressat.id, riv.id, kontrakt.id, producent.id from LogiskAdressat as adressat, RivVersion as riv,
-Tjanstekontrakt as kontrakt, Tjanstekomponent as producent
-where adressat.hsaId = 'LT-HSAPRODUCER6'
-and riv.namn = 'RIVTABP21'
-and kontrakt.namnrymd = @serviceContractNamespace
-and producent.hsaId = CONCAT('LT-HSAProducent_6_',@popularDomainName);
-</con:description><con:settings/><con:config xsi:type="con:ManualTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/></con:testStep><con:testStep type="manualTestStep" name="MySQL SetUp authorization"><con:description>-- =========================================================================== 
--- Different consumers in different environments
--- SKLTP-BOX consumer:		client
--- SKLTP Verify consumer:	HSASERVICES-100M
--- ===========================================================================
-
-SET @consumerHsaId = 'client';
-SET @serviceContractNamespace = 'urn:riv:clinicalprocess:healthcond:description:GetDiagnosis:2:rivtabp21';
-
--- =========================================================================== 
--- Setup authoriation in TAK
--- ===========================================================================
-
--- INSERT INTO Tjanstekomponent (adress, beskrivning, hsaId, version) VALUES('', 'Test konsument', @consumerHsaId, 0);
-
-INSERT INTO `Anropsbehorighet` (`fromTidpunkt`, `integrationsavtal`, `tomTidpunkt`, `version`, `logiskAdressat_id`, `tjanstekonsument_id`, `tjanstekontrakt_id`)
-select '2013-01-01', 'Integrationstest Aggregerandetjänst', '2114-12-31', 0, adressat.id, konsument.id, kontrakt.id
-from `LogiskAdressat` as adressat, `Tjanstekontrakt` as kontrakt, `Tjanstekomponent` as konsument
-where adressat.hsaId = 'LT-HSAPRODUCER1'
-and kontrakt.namnrymd = @serviceContractNamespace
-and konsument.hsaId = @consumerHsaId;
-
-INSERT INTO `Anropsbehorighet` (`fromTidpunkt`, `integrationsavtal`, `tomTidpunkt`, `version`, `logiskAdressat_id`, `tjanstekonsument_id`, `tjanstekontrakt_id`)
-select '2013-01-01', 'Integrationstest Aggregerandetjänst', '2114-12-31', 0, adressat.id, konsument.id, kontrakt.id
-from `LogiskAdressat` as adressat, `Tjanstekontrakt` as kontrakt, `Tjanstekomponent` as konsument
-where adressat.hsaId = 'LT-HSAPRODUCER2'
-and kontrakt.namnrymd = @serviceContractNamespace
-and konsument.hsaId = @consumerHsaId;
-
-INSERT INTO `Anropsbehorighet` (`fromTidpunkt`, `integrationsavtal`, `tomTidpunkt`, `version`, `logiskAdressat_id`, `tjanstekonsument_id`, `tjanstekontrakt_id`)
-select '2013-01-01', 'Integrationstest Aggregerandetjänst', '2114-12-31', 0, adressat.id, konsument.id, kontrakt.id
-from `LogiskAdressat` as adressat, `Tjanstekontrakt` as kontrakt, `Tjanstekomponent` as konsument
-where adressat.hsaId = 'LT-HSAPRODUCER3'
-and kontrakt.namnrymd = @serviceContractNamespace
-and konsument.hsaId = @consumerHsaId;
-
-INSERT INTO `Anropsbehorighet` (`fromTidpunkt`, `integrationsavtal`, `tomTidpunkt`, `version`, `logiskAdressat_id`, `tjanstekonsument_id`, `tjanstekontrakt_id`)
-select '2013-01-01', 'Integrationstest Aggregerandetjänst', '2114-12-31', 0, adressat.id, konsument.id, kontrakt.id
-from `LogiskAdressat` as adressat, `Tjanstekontrakt` as kontrakt, `Tjanstekomponent` as konsument
-where adressat.hsaId = 'LT-HSAPRODUCER4'
-and kontrakt.namnrymd = @serviceContractNamespace
-and konsument.hsaId = @consumerHsaId;
-
--- START LT-HSAPRODUCER5
--- client should not have authorization to LT-HSAPRODUCER5
--- END LT-HSAPRODUCER5
-
-INSERT INTO `Anropsbehorighet` (`fromTidpunkt`, `integrationsavtal`, `tomTidpunkt`, `version`, `logiskAdressat_id`, `tjanstekonsument_id`, `tjanstekontrakt_id`)
-select '2013-01-01', 'Integrationstest Aggregerandetjänst', '2114-12-31', 0, adressat.id, konsument.id, kontrakt.id
-from `LogiskAdressat` as adressat, `Tjanstekontrakt` as kontrakt, `Tjanstekomponent` as konsument
-where adressat.hsaId = 'LT-HSAPRODUCER6'
-and kontrakt.namnrymd = @serviceContractNamespace
-and konsument.hsaId = @consumerHsaId;</con:description><con:settings/><con:config xsi:type="con:ManualTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/></con:testStep><con:testStep type="manualTestStep" name="Reset cache"><con:description>kör en reset cache i målmiljön, adressen kan variera:
-
-http://33.33.33.33:23000/resetcache</con:description><con:settings/><con:config xsi:type="con:ManualTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite name="SetUp EI"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SetUp engagements in EI" searchProperties="true" id="08b06e9e-f8ca-464c-9de4-1bbd2a734f9a"><con:settings/><con:testStep type="request" name="Update - 188803099368 Agda Andersson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 188803099368 Agda Andersson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-vp-sender-id" value="client"/>
-  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>
-  &lt;con:entry key="x-vp-instance-id" value="VP_INSTANCE_1"/>
-&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.esb.ntjp.se:443/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
-   <soapenv:Header>
-      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
-   </soapenv:Header>
-   <soapenv:Body>
-   
-      <urn1:Update>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>false</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>188803099368</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>dia</urn2:categorization>
-               <urn2:logicalAddress>HSA-ID-2</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>HSA-ID-2</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-         </urn1:engagementTransaction>
-      </urn1:Update>
-     
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 121212121212 - Tolvan Tolvansson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 121212121212 - Tolvan Tolvansson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>
-  &lt;con:entry key="x-vp-sender-id" value="client"/>
-  &lt;con:entry key="x-vp-instance-id" value="VP_INSTANCE_1"/>
-&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.esb.ntjp.se:443/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:monitoring:PingForConfigurationResponder:1:PingForConfiguration"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite name="SetUp EI"><con:description>https://test.esb.ntjp.se:443/vp/Update/1/rivtabp21
+https://qa.esb.ntjp.se:443/vp/Update/1/rivtabp21</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SetUp engagements in EI" searchProperties="true" id="08b06e9e-f8ca-464c-9de4-1bbd2a734f9a"><con:settings/><con:testStep type="request" name="Update - 121212121212 - Tolvan Tolvansson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 121212121212 - Tolvan Tolvansson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1977,7 +1802,40 @@ http://33.33.33.33:23000/resetcache</con:description><con:settings/><con:config 
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 194804032094 - Laban Meijer"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 194804032094 - Laban Meijer" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 188803099368 - Agda Andersson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 188803099368 - Agda Andersson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:Update>
+         <urn1:engagementTransaction />
+      </urn1:Update>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 192011189228 - Gunbritt Boden"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 192011189228 - Gunbritt Boden" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:Update>
+         <urn1:engagementTransaction>
+            <urn2:deleteFlag>false</urn2:deleteFlag>
+            <urn2:engagement>
+               <urn2:registeredResidentIdentification>192011189228</urn2:registeredResidentIdentification>
+               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-1</urn2:logicalAddress>
+               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
+               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
+               <urn2:sourceSystem>HSA-ID-1</urn2:sourceSystem>
+               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
+               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
+            </urn2:engagement>
+         </urn1:engagementTransaction>
+      </urn1:Update>
+   </soapenv:Body>
+</soapenv:Envelope>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 194804032094 - Laban Meijer"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 194804032094 - Laban Meijer" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -1988,46 +1846,18 @@ http://33.33.33.33:23000/resetcache</con:description><con:settings/><con:config 
             <urn2:engagement>
                <urn2:registeredResidentIdentification>194804032094</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER1</urn2:logicalAddress>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-7</urn2:logicalAddress>
                <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
                <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER1</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>false</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>194804032094</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER2</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER2</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>false</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>194804032094</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER3</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER3</urn2:sourceSystem>
+               <urn2:sourceSystem>HSA-ID-7</urn2:sourceSystem>
                <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
                <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
             </urn2:engagement>
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 194911172296 - Sven Sturesson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 194911172296 - Sven Sturesson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 194911172296 - Sven Sturesson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 194911172296 - Sven Sturesson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -2038,18 +1868,32 @@ http://33.33.33.33:23000/resetcache</con:description><con:settings/><con:config 
             <urn2:engagement>
                <urn2:registeredResidentIdentification>194911172296</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER3</urn2:logicalAddress>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-1</urn2:logicalAddress>
                <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
                <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER3</urn2:sourceSystem>
+               <urn2:sourceSystem>HSA-ID-1</urn2:sourceSystem>
+               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
+               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
+            </urn2:engagement>
+         </urn1:engagementTransaction>
+         <urn1:engagementTransaction>
+            <urn2:deleteFlag>false</urn2:deleteFlag>
+            <urn2:engagement>
+               <urn2:registeredResidentIdentification>194911172296</urn2:registeredResidentIdentification>
+               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-2</urn2:logicalAddress>
+               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
+               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
+               <urn2:sourceSystem>HSA-ID-2</urn2:sourceSystem>
                <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
                <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
             </urn2:engagement>
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 198611062384 - Ulla Alm"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 198611062384 - Ulla Alm" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 198611062384 - Ulla Alm"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 198611062384 - Ulla Alm" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#ei-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -2060,11 +1904,11 @@ http://33.33.33.33:23000/resetcache</con:description><con:settings/><con:config 
             <urn2:engagement>
                <urn2:registeredResidentIdentification>198611062384</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER1</urn2:logicalAddress>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-1</urn2:logicalAddress>
                <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
                <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER1</urn2:sourceSystem>
+               <urn2:sourceSystem>HSA-ID-1</urn2:sourceSystem>
                <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
                <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
             </urn2:engagement>
@@ -2074,11 +1918,11 @@ http://33.33.33.33:23000/resetcache</con:description><con:settings/><con:config 
             <urn2:engagement>
                <urn2:registeredResidentIdentification>198611062384</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER2</urn2:logicalAddress>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-2</urn2:logicalAddress>
                <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
                <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER2</urn2:sourceSystem>
+               <urn2:sourceSystem>HSA-ID-2</urn2:sourceSystem>
                <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
                <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
             </urn2:engagement>
@@ -2088,224 +1932,21 @@ http://33.33.33.33:23000/resetcache</con:description><con:settings/><con:config 
             <urn2:engagement>
                <urn2:registeredResidentIdentification>198611062384</urn2:registeredResidentIdentification>
                <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER4</urn2:logicalAddress>
+               <urn2:categorization>dia</urn2:categorization>
+               <urn2:logicalAddress>HSA-ID-3</urn2:logicalAddress>
                <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
                <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER4</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>false</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>198611062384</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER6</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER6</urn2:sourceSystem>
+               <urn2:sourceSystem>HSA-ID-3</urn2:sourceSystem>
                <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
                <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
             </urn2:engagement>
          </urn1:engagementTransaction>
       </urn1:Update>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite name="Testcases"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC1:Hämta data från bakomliggande producenter" searchProperties="true" id="2e076ab1-7b97-42dc-bb7e-8f1b85ad5b80"><con:settings/><con:testStep type="request" name="GetDiagnosis - Agda Andersson - all source systems"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="GetDiagnosis - Agda Andersson - all source systems" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
-   <soapenv:Header>
-      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
-   </soapenv:Header>
-   <soapenv:Body>
-      <urn1:GetDiagnosis>
-         <!--Zero or more repetitions:-->
-         <urn1:careUnitHSAId></urn1:careUnitHSAId>
-         <urn1:patientId>
-            <urn2:id>188803099368</urn2:id>
-            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
-            <!--You may enter ANY elements at this point-->
-         </urn1:patientId>
-         <!--Optional:-->
-         <urn1:timePeriod>
-            <urn2:start></urn2:start>
-            <urn2:end></urn2:end>
-            <!--You may enter ANY elements at this point-->
-         </urn1:timePeriod>
-         <!--Optional:-->
-         <urn1:sourceSystemHSAId></urn1:sourceSystemHSAId>
-         <!--Zero or more repetitions:-->
-         <urn1:careContactId></urn1:careContactId>
-         <!--You may enter ANY elements at this point-->
-      </urn1:GetDiagnosis>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="GetDiagnosis response count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2';
-count(/soap:Envelope/soap:Body/tk:GetDiagnosisResponse/tk:diagnosis)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="ProcessingStatusList response count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:interoperability:headers:1';
-count(/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList)</path><content>2</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetDiagnosis - Agda Andersson - selected source system"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="GetDiagnosis - Agda Andersson - selected source system" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
-   <soapenv:Header>
-      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
-   </soapenv:Header>
-   <soapenv:Body>
-      <urn1:GetDiagnosis>
-         <!--Zero or more repetitions:-->
-         <urn1:careUnitHSAId></urn1:careUnitHSAId>
-         <urn1:patientId>
-            <urn2:id>188803099368</urn2:id>
-            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
-            <!--You may enter ANY elements at this point-->
-         </urn1:patientId>
-         <!--Optional:-->
-         <urn1:timePeriod>
-            <urn2:start></urn2:start>
-            <urn2:end></urn2:end>
-            <!--You may enter ANY elements at this point-->
-         </urn1:timePeriod>
-         <!--Optional:-->
-         <urn1:sourceSystemHSAId>LT-HSAPRODUCER1</urn1:sourceSystemHSAId>
-         <!--Zero or more repetitions:-->
-         <urn1:careContactId></urn1:careContactId>
-         <!--You may enter ANY elements at this point-->
-      </urn1:GetDiagnosis>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="GetDiagnosis response count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2';
-count(/soap:Envelope/soap:Body/tk:GetDiagnosisResponse/tk:diagnosis)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="ProcessingStatusList response count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:interoperability:headers:1';
-count(/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC2: Testperson saknar engagemang" searchProperties="true" id="a5c5f0c8-2540-4533-942f-b14eba04f34e"><con:settings/><con:testStep type="request" name="GetDiagnosis - 192011189228 - Gunbritt Boden"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="GetDiagnosis - 192011189228 - Gunbritt Boden" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
-   <soapenv:Header>
-      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
-   </soapenv:Header>
-   <soapenv:Body>
-      <urn1:GetDiagnosis>
-         <!--Zero or more repetitions:-->
-         <urn1:careUnitHSAId></urn1:careUnitHSAId>
-         <urn1:patientId>
-            <urn2:id>192011189228</urn2:id>
-            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
-            <!--You may enter ANY elements at this point-->
-         </urn1:patientId>
-         <!--Optional:-->
-         <urn1:timePeriod>
-            <urn2:start></urn2:start>
-            <urn2:end></urn2:end>
-            <!--You may enter ANY elements at this point-->
-         </urn1:timePeriod>
-         <!--Optional:-->
-         <urn1:sourceSystemHSAId></urn1:sourceSystemHSAId>
-         <!--Zero or more repetitions:-->
-         <urn1:careContactId></urn1:careContactId>
-         <!--You may enter ANY elements at this point-->
-      </urn1:GetDiagnosis>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="GetDiagnosis response count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2';
-count(/soap:Envelope/soap:Body/tk:GetDiagnosisResponse/tk:diagnosis)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="ProcessingStatusList response count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:interoperability:headers:1';
-count(/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC3: Inget svar från ett system, endast engagemang i ett system" searchProperties="true" id="cf949c70-ae71-409f-93a2-c750485339f1"><con:settings/><con:testStep type="request" name="GetDiagnosis - 194911172296 - Sven Sturesson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="GetDiagnosis - 194911172296 - Sven Sturesson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
-   <soapenv:Header>
-      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
-   </soapenv:Header>
-   <soapenv:Body>
-      <urn1:GetDiagnosis>
-         <!--Zero or more repetitions:-->
-         <urn1:careUnitHSAId></urn1:careUnitHSAId>
-         <urn1:patientId>
-            <urn2:id>194911172296</urn2:id>
-            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
-            <!--You may enter ANY elements at this point-->
-         </urn1:patientId>
-         <!--Optional:-->
-         <urn1:timePeriod>
-            <urn2:start></urn2:start>
-            <urn2:end></urn2:end>
-            <!--You may enter ANY elements at this point-->
-         </urn1:timePeriod>
-         <!--Optional:-->
-         <urn1:sourceSystemHSAId></urn1:sourceSystemHSAId>
-         <!--Zero or more repetitions:-->
-         <urn1:careContactId></urn1:careContactId>
-         <!--You may enter ANY elements at this point-->
-      </urn1:GetDiagnosis>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="ProcessingStatusList response count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:interoperability:headers:1';
-count(/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="GetDiagnosis response count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2';
-count(/soap:Envelope/soap:Body/tk:GetDiagnosisResponse/tk:diagnosis)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC4: Inget svar från ett system, engagemang i flera system" searchProperties="true" id="69cc9220-de1f-40fa-9a3b-b6365715bf52"><con:settings/><con:testStep type="request" name="GetDiagnosis - 194804032094 - Laban Meijer"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="GetDiagnosis - 194804032094 - Laban Meijer" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
-   <soapenv:Header>
-      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
-   </soapenv:Header>
-   <soapenv:Body>
-      <urn1:GetDiagnosis>
-         <!--Zero or more repetitions:-->
-         <urn1:careUnitHSAId></urn1:careUnitHSAId>
-         <urn1:patientId>
-            <urn2:id>194804032094</urn2:id>
-            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
-            <!--You may enter ANY elements at this point-->
-         </urn1:patientId>
-         <!--Optional:-->
-         <urn1:timePeriod>
-            <urn2:start></urn2:start>
-            <urn2:end></urn2:end>
-            <!--You may enter ANY elements at this point-->
-         </urn1:timePeriod>
-         <!--Optional:-->
-         <urn1:sourceSystemHSAId></urn1:sourceSystemHSAId>
-         <!--Zero or more repetitions:-->
-         <urn1:careContactId></urn1:careContactId>
-         <!--You may enter ANY elements at this point-->
-      </urn1:GetDiagnosis>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="ProcessingStatusList response count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:interoperability:headers:1';
-count(/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="GetDiagnosis response count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2';
-count(/soap:Envelope/soap:Body/tk:GetDiagnosisResponse/tk:diagnosis)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC5: Error från system" searchProperties="true" id="d8a0e2ee-c783-4692-bc8a-d97d1f6995e3"><con:settings/><con:testStep type="request" name="GetDiagnosis - 198611062384 - Ulla Alm"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="GetDiagnosis - 198611062384 - Ulla Alm" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
-   <soapenv:Header>
-      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
-   </soapenv:Header>
-   <soapenv:Body>
-      <urn1:GetDiagnosis>
-         <!--Zero or more repetitions:-->
-         <urn1:careUnitHSAId></urn1:careUnitHSAId>
-         <urn1:patientId>
-            <urn2:id>198611062384</urn2:id>
-            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
-            <!--You may enter ANY elements at this point-->
-         </urn1:patientId>
-         <!--Optional:-->
-         <urn1:timePeriod>
-            <urn2:start></urn2:start>
-            <urn2:end></urn2:end>
-            <!--You may enter ANY elements at this point-->
-         </urn1:timePeriod>
-         <!--Optional:-->
-         <urn1:sourceSystemHSAId></urn1:sourceSystemHSAId>
-         <!--Zero or more repetitions:-->
-         <urn1:careContactId></urn1:careContactId>
-         <!--You may enter ANY elements at this point-->
-      </urn1:GetDiagnosis>
-   </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="GetDiagnosis response count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2';
-count(/soap:Envelope/soap:Body/tk:GetDiagnosisResponse/tk:diagnosis)</path><content>4</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="ProcessingStatusList response count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:interoperability:headers:1';
-count(/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList)</path><content>4</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Error from system"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:interoperability:headers:1';
-/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList[*]/tk:lastUnsuccessfulSynchError</path><content><![CDATA[<lastUnsuccessfulSynchError xmlns="urn:riv:interoperability:headers:1" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:interoperability:headers:1" xmlns:urn1="urn:riv:itintegration:registry:1">
-  <causingAgent>virtualization_platform</causingAgent>
-  <code>43000</code>
-  <text>This Exception is just the symptom of Producer4 simulating its inability to respond. Failed to route event via endpoint: org.mule.module.cxf.CxfOutboundMessageProcessor. Message payload is of type: PostMethod, This Exception is just the symptom of Producer4 simulating its inability to respond</text>
-</lastUnsuccessfulSynchError>]]></content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Timeout from system"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:interoperability:headers:1';
-/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList[*]/tk:lastUnsuccessfulSynchError</path><content><![CDATA[<lastUnsuccessfulSynchError xmlns="urn:riv:interoperability:headers:1" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:interoperability:headers:1" xmlns:urn1="urn:riv:itintegration:registry:1">
-  <causingAgent>virtualization_platform</causingAgent>
-  <code>43000</code>
-  <text>Read timed out. Failed to route event via endpoint: org.mule.module.cxf.CxfOutboundMessageProcessor. Message payload is of type: PostMethod, Read timed out</text>
-</lastUnsuccessfulSynchError>]]></content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC6: Samverkan inte etablerad med producentsystem" searchProperties="true" id="24b038be-972c-460c-9ffb-11556d397b28"><con:settings/><con:testStep type="request" name="GetDiagnosis - 121212121212 - Tolvan Tolvansson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="GetDiagnosis - 121212121212 - Tolvan Tolvansson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>ei-env</con:name><con:value>https://test.esb.ntjp.se:443/vp/Update/1/rivtabp21</con:value></con:property></con:properties></con:testSuite><con:testSuite name="Testsuite for Dev"><con:description>http://ine-dit-app02.sth.basefarm.net:9008/GetAggregatedDiagnosis/service/v2</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC1: Hämta data från bakomliggande producenter" searchProperties="true" id="2e076ab1-7b97-42dc-bb7e-8f1b85ad5b80"><con:settings/><con:testStep type="request" name="Tolvan Tolvansson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="Tolvan Tolvansson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-vp-sender-id" value="test"/>
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
@@ -2331,305 +1972,325 @@ declare namespace tk='urn:riv:interoperability:headers:1';
          <!--You may enter ANY elements at this point-->
       </urn1:GetDiagnosis>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="XPath Match" name="Authorization missing for system"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:interoperability:headers:1';
-/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList[*]/tk:lastUnsuccessfulSynchError</path><content><![CDATA[<lastUnsuccessfulSynchError xmlns="urn:riv:interoperability:headers:1" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:interoperability:headers:1" xmlns:urn1="urn:riv:itintegration:registry:1">
-  <causingAgent>virtualization_platform</causingAgent>
-  <code>43000</code>
-  <text>VP007 Authorization missing for serviceNamespace: urn:riv:clinicalprocess:healthcond:description:GetDiagnosis:2:rivtabp21, receiverId: LT-HSAPRODUCER5, senderId: client. Failed to route event via endpoint: org.mule.module.cxf.CxfOutboundMessageProcessor. Message payload is of type: PostMethod, VP007 Authorization missing for serviceNamespace: urn:riv:clinicalprocess:healthcond:description:GetDiagnosis:2:rivtabp21, receiverId: LT-HSAPRODUCER5, senderId: client</text>
-</lastUnsuccessfulSynchError>]]></content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="ProcessingStatusList response count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:interoperability:headers:1';
-count(/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList)</path><content>2</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="GetDiagnosis response count"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace tk='urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2';
-count(/soap:Envelope/soap:Body/tk:GetDiagnosisResponse/tk:diagnosis)</path><content>2</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite name="TearDown EI"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TearDown engagements in EI" searchProperties="true" id="eded92d8-a814-461b-8247-fbf34c857cf3"><con:settings/><con:testStep type="request" name="Update - 188803099368 Agda Andersson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 188803099368 Agda Andersson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response"><con:configuration><path>count(//*:diagnosisHeader)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Tolvan Tolvansson, Systemadressering"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="Tolvan Tolvansson, Systemadressering" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-vp-sender-id" value="test"/>
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
    <soapenv:Body>
-      <urn1:Update>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>188803099368</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER1</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER1</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>188803099368</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER2</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER2</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-      </urn1:Update>
+      <urn1:GetDiagnosis>
+         <!--Zero or more repetitions:-->
+         <urn1:careUnitHSAId></urn1:careUnitHSAId>
+         <urn1:patientId>
+            <urn2:id>121212121212</urn2:id>
+            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:timePeriod>
+            <urn2:start></urn2:start>
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:timePeriod>
+         <!--Optional:-->
+         <urn1:sourceSystemHSAId>HSA-ID-5</urn1:sourceSystemHSAId>
+         <!--Zero or more repetitions:-->
+         <urn1:careContactId></urn1:careContactId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetDiagnosis>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 121212121212 - Tolvan Tolvansson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 121212121212 - Tolvan Tolvansson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response"><con:configuration><path>count(//*:diagnosisHeader)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="HSA-ID-5"><con:configuration><path>exists(//*:logicalAddress[.="HSA-ID-5"])</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC2: Testperson saknar engagemang" searchProperties="true" id="a5c5f0c8-2540-4533-942f-b14eba04f34e"><con:settings/><con:testStep type="request" name="Agda Andersson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="Agda Andersson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-vp-sender-id" value="test"/>
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
    <soapenv:Body>
-      <urn1:Update>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>121212121212</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER1</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER1</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>121212121212</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER5</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER5</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-      </urn1:Update>
+      <urn1:GetDiagnosis>
+         <urn1:patientId>
+            <urn2:id>188803099368</urn2:id>
+            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
+         </urn1:patientId>
+      </urn1:GetDiagnosis>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 194804032094 - Laban Meijer"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 194804032094 - Laban Meijer" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response"><con:configuration><path>count(//*:diagnosisHeader)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC3: Inget svar från ett system, endast engagemang i ett system" searchProperties="true" id="cf949c70-ae71-409f-93a2-c750485339f1"><con:settings/><con:testStep type="request" name="Sven Sturesson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="Sven Sturesson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>
+  &lt;con:entry key="x-vp-sender-id" value="test"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
    <soapenv:Body>
-      <urn1:Update>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>194804032094</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER1</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER1</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>194804032094</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER2</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER2</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>194804032094</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER3</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER3</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-      </urn1:Update>
+      <urn1:GetDiagnosis>
+         <!--Zero or more repetitions:-->
+         <urn1:careUnitHSAId></urn1:careUnitHSAId>
+         <urn1:patientId>
+            <urn2:id>194911172296</urn2:id>
+            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:timePeriod>
+            <urn2:start></urn2:start>
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:timePeriod>
+         <!--Optional:-->
+         <urn1:sourceSystemHSAId></urn1:sourceSystemHSAId>
+         <!--Zero or more repetitions:-->
+         <urn1:careContactId></urn1:careContactId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetDiagnosis>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 194911172296 - Sven Sturesson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 194911172296 - Sven Sturesson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:assertion type="XPath Match" name="GetDiagnosis response count"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>2</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:diagnosisHeader)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC4: Inget svar från ett system, engagemang i flera system" searchProperties="true" id="69cc9220-de1f-40fa-9a3b-b6365715bf52"><con:settings/><con:testStep type="request" name="Ulla Alm"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="Ulla Alm" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>
+  &lt;con:entry key="x-vp-sender-id" value="test"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
    <soapenv:Body>
-      <urn1:Update>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>194911172296</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER3</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER3</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-      </urn1:Update>
+      <urn1:GetDiagnosis>
+         <!--Zero or more repetitions:-->
+         <urn1:careUnitHSAId></urn1:careUnitHSAId>
+         <urn1:patientId>
+            <urn2:id>198611062384</urn2:id>
+            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:timePeriod>
+            <urn2:start></urn2:start>
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:timePeriod>
+         <!--Optional:-->
+         <urn1:sourceSystemHSAId></urn1:sourceSystemHSAId>
+         <!--Zero or more repetitions:-->
+         <urn1:careContactId></urn1:careContactId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetDiagnosis>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Update - 198611062384 - Ulla Alm"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>UpdateResponderBinding</con:interface><con:operation>Update</con:operation><con:request name="Update - 198611062384 - Ulla Alm" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://${#Project#serviceEndpoint}:20000/vp/Update/1/rivtabp21</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:itintegration:engagementindex:UpdateResponder:1" xmlns:urn2="urn:riv:itintegration:engagementindex:1">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response"><con:configuration><path>count(//*:diagnosisHeader)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="TimeOut"><con:configuration><path>count(//*:lastUnsuccessfulSynchError)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC5: Error från system" searchProperties="true" id="d8a0e2ee-c783-4692-bc8a-d97d1f6995e3"><con:settings/><con:testStep type="request" name="Gunbritt Boden"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="Gunbritt Boden" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>
+  &lt;con:entry key="x-vp-sender-id" value="test"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
    </soapenv:Header>
    <soapenv:Body>
-      <urn1:Update>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>198611062384</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER1</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER1</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>198611062384</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER2</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER2</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>198611062384</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER4</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER4</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-         <urn1:engagementTransaction>
-            <urn2:deleteFlag>true</urn2:deleteFlag>
-            <urn2:engagement>
-               <urn2:registeredResidentIdentification>198611062384</urn2:registeredResidentIdentification>
-               <urn2:serviceDomain>riv:clinicalprocess:healthcond:description</urn2:serviceDomain>
-               <urn2:categorization>2</urn2:categorization>
-               <urn2:logicalAddress>LT-HSAPRODUCER6</urn2:logicalAddress>
-               <urn2:businessObjectInstanceIdentifier>NA</urn2:businessObjectInstanceIdentifier>
-               <urn2:clinicalProcessInterestId>NA</urn2:clinicalProcessInterestId>
-               <urn2:sourceSystem>LT-HSAPRODUCER6</urn2:sourceSystem>
-               <urn2:dataController>TEST-DATA-CONTROLLER</urn2:dataController>
-               <urn2:mostRecentContent>20140617153000</urn2:mostRecentContent>
-            </urn2:engagement>
-         </urn1:engagementTransaction>
-      </urn1:Update>
+      <urn1:GetDiagnosis>
+         <!--Zero or more repetitions:-->
+         <urn1:careUnitHSAId></urn1:careUnitHSAId>
+         <urn1:patientId>
+            <urn2:id>192011189228</urn2:id>
+            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:timePeriod>
+            <urn2:start></urn2:start>
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:timePeriod>
+         <!--Optional:-->
+         <urn1:sourceSystemHSAId></urn1:sourceSystemHSAId>
+         <!--Zero or more repetitions:-->
+         <urn1:careContactId></urn1:careContactId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetDiagnosis>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:itintegration:engagementindex:UpdateResponder:1:Update"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite name="TearDown TAK"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TearDown TAK manually" searchProperties="true"><con:settings/><con:testStep type="manualTestStep" name="MySQL remove routing and authorization"><con:description>-- Detta script tar bort all data  från TAK som behövdes för testerna
-
-SET @popularDomainName = 'Hantera hälsorelaterade tillstånd, beskrivning';
-
--- Ta bort all anropsbehörigheter
-
-DELETE FROM `Anropsbehorighet` WHERE integrationsavtal = 'Integrationstest Aggregerandetjänst';
-
--- Ta bort logiska adresser
-DELETE FROM `LogiskAdress`
-WHERE logiskAdressat_id IN (
- SELECT id FROM `LogiskAdressat` adressat
- WHERE adressat.hsaId = 'LT-HSAPRODUCER1'
-);
-
-DELETE FROM `LogiskAdress`
-WHERE logiskAdressat_id IN (
- SELECT id FROM `LogiskAdressat` adressat
- WHERE adressat.hsaId = 'LT-HSAPRODUCER2'
-);
-
-DELETE FROM `LogiskAdress`
-WHERE logiskAdressat_id IN (
- SELECT id FROM `LogiskAdressat` adressat
- WHERE adressat.hsaId = 'LT-HSAPRODUCER3'
-);
-
-DELETE FROM `LogiskAdress`
-WHERE logiskAdressat_id IN (
- SELECT id FROM `LogiskAdressat` adressat
- WHERE adressat.hsaId = 'LT-HSAPRODUCER4'
-);
-
-DELETE FROM `LogiskAdress`
-WHERE logiskAdressat_id IN (
- SELECT id FROM `LogiskAdressat` adressat
- WHERE adressat.hsaId = 'LT-HSAPRODUCER5'
-);
-
-DELETE FROM `LogiskAdress`
-WHERE logiskAdressat_id IN (
- SELECT id FROM `LogiskAdressat` adressat
- WHERE adressat.hsaId = 'LT-HSAPRODUCER6'
-);
-
--- Ta bort all producenter
-Delete FROM `Tjanstekomponent`
-WHERE hsaId = CONCAT('LT-HSAProducent_1_',@popularDomainName);
-
-Delete FROM `Tjanstekomponent`
-WHERE hsaId = CONCAT('LT-HSAProducent_2_',@popularDomainName);
-
-Delete FROM `Tjanstekomponent`
-WHERE hsaId = CONCAT('LT-HSAProducent_3_',@popularDomainName);
-
-Delete FROM `Tjanstekomponent`
-WHERE hsaId = CONCAT('LT-HSAProducent_4_',@popularDomainName);
-
-Delete FROM `Tjanstekomponent`
-WHERE hsaId = CONCAT('LT-HSAProducent_5_',@popularDomainName);
-
-Delete FROM `Tjanstekomponent`
-WHERE hsaId = CONCAT('LT-HSAProducent_6_',@popularDomainName);
-
--- Ta bort logiska adressater
-DELETE FROM `LogiskAdressat`
-WHERE hsaId = 'LT-HSAPRODUCER1';
-
-DELETE FROM `LogiskAdressat`
-WHERE hsaId = 'LT-HSAPRODUCER2';
-
-DELETE FROM `LogiskAdressat`
-WHERE hsaId = 'LT-HSAPRODUCER3';
-
-DELETE FROM `LogiskAdressat`
-WHERE hsaId = 'LT-HSAPRODUCER4';
-
-DELETE FROM `LogiskAdressat`
-WHERE hsaId = 'LT-HSAPRODUCER5';
-
-DELETE FROM `LogiskAdressat`
-WHERE hsaId = 'LT-HSAPRODUCER6';</con:description><con:settings/><con:config xsi:type="con:ManualTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/></con:testStep><con:testStep type="manualTestStep" name="Reset cache"><con:description>kör en reset cache i målmiljön, adressen kan variera:
-
-http://33.33.33.33:23000/resetcache</con:description><con:settings/><con:config xsi:type="con:ManualTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>serviceEndpoint</con:name><con:value>https://test.esb.ntjp.se:443</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response"><con:configuration><path>count(//*:diagnosisHeader)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match"><con:configuration/></con:assertion><con:assertion type="XPath Match" name="Error"><con:configuration><path>count(//*:lastUnsuccessfulSynchError)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>agg-env</con:name><con:value>http://ine-dit-app02.sth.basefarm.net:9008/GetAggregatedDiagnosis/service/v2</con:value></con:property></con:properties></con:testSuite><con:testSuite name="TestSuite for Test &amp; QA"><con:description>https://test.esb.ntjp.se:443/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21
+https://qa.esb.ntjp.se:443/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC1: Hämta data från bakomliggande producenter" searchProperties="true" id="aa0b572b-2135-47cc-8053-3bed1800cfbf"><con:settings/><con:testStep type="request" name="Tolvan Tolvansson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="Tolvan Tolvansson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-vp-sender-id" value="test"/>
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:GetDiagnosis>
+         <!--Zero or more repetitions:-->
+         <urn1:careUnitHSAId></urn1:careUnitHSAId>
+         <urn1:patientId>
+            <urn2:id>121212121212</urn2:id>
+            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:timePeriod>
+            <urn2:start></urn2:start>
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:timePeriod>
+         <!--Optional:-->
+         <urn1:sourceSystemHSAId></urn1:sourceSystemHSAId>
+         <!--Zero or more repetitions:-->
+         <urn1:careContactId></urn1:careContactId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetDiagnosis>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response"><con:configuration><path>count(//*:diagnosisHeader)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Tolvan Tolvansson, Systemadressering"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="Tolvan Tolvansson, Systemadressering" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-vp-sender-id" value="test"/>
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:GetDiagnosis>
+         <!--Zero or more repetitions:-->
+         <urn1:careUnitHSAId></urn1:careUnitHSAId>
+         <urn1:patientId>
+            <urn2:id>121212121212</urn2:id>
+            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:timePeriod>
+            <urn2:start></urn2:start>
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:timePeriod>
+         <!--Optional:-->
+         <urn1:sourceSystemHSAId>HSA-ID-5</urn1:sourceSystemHSAId>
+         <!--Zero or more repetitions:-->
+         <urn1:careContactId></urn1:careContactId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetDiagnosis>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response"><con:configuration><path>count(//*:diagnosisHeader)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="HSA-ID-5"><con:configuration><path>exists(//*:logicalAddress[.="HSA-ID-5"])</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC2: Testperson saknar engagemang" searchProperties="true" id="ea3dbb79-b018-451e-8ecd-d462f0a613e4"><con:settings/><con:testStep type="request" name="Agda Andersson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="Agda Andersson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-vp-sender-id" value="test"/>
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:GetDiagnosis>
+         <urn1:patientId>
+            <urn2:id>188803099368</urn2:id>
+            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
+         </urn1:patientId>
+      </urn1:GetDiagnosis>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response"><con:configuration><path>count(//*:diagnosisHeader)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC3: Inget svar från ett system, endast engagemang i ett system" searchProperties="true" id="a6551ded-3c41-4602-bf78-49bbe25ace87"><con:settings/><con:testStep type="request" name="Sven Sturesson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="Sven Sturesson" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>
+  &lt;con:entry key="x-vp-sender-id" value="test"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:GetDiagnosis>
+         <!--Zero or more repetitions:-->
+         <urn1:careUnitHSAId></urn1:careUnitHSAId>
+         <urn1:patientId>
+            <urn2:id>194911172296</urn2:id>
+            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:timePeriod>
+            <urn2:start></urn2:start>
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:timePeriod>
+         <!--Optional:-->
+         <urn1:sourceSystemHSAId></urn1:sourceSystemHSAId>
+         <!--Zero or more repetitions:-->
+         <urn1:careContactId></urn1:careContactId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetDiagnosis>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:assertion type="XPath Match" name="GetDiagnosis response count"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>2</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:diagnosisHeader)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC4: Inget svar från ett system, engagemang i flera system" searchProperties="true" id="de7595c3-a8e1-4e5b-8dab-e5f2b265de01"><con:settings/><con:testStep type="request" name="Ulla Alm"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="Ulla Alm" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>
+  &lt;con:entry key="x-vp-sender-id" value="test"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:GetDiagnosis>
+         <!--Zero or more repetitions:-->
+         <urn1:careUnitHSAId></urn1:careUnitHSAId>
+         <urn1:patientId>
+            <urn2:id>198611062384</urn2:id>
+            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:timePeriod>
+            <urn2:start></urn2:start>
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:timePeriod>
+         <!--Optional:-->
+         <urn1:sourceSystemHSAId></urn1:sourceSystemHSAId>
+         <!--Zero or more repetitions:-->
+         <urn1:careContactId></urn1:careContactId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetDiagnosis>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response"><con:configuration><path>count(//*:diagnosisHeader)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="TimeOut"><con:configuration><path>count(//*:lastUnsuccessfulSynchError)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC5: Error från system" searchProperties="true" id="2c234ffa-b24f-4471-a6a7-fbac0f91139d"><con:settings/><con:testStep type="request" name="Gunbritt Boden"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="Gunbritt Boden" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>
+  &lt;con:entry key="x-vp-sender-id" value="test"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:GetDiagnosis>
+         <!--Zero or more repetitions:-->
+         <urn1:careUnitHSAId></urn1:careUnitHSAId>
+         <urn1:patientId>
+            <urn2:id>192011189228</urn2:id>
+            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:timePeriod>
+            <urn2:start></urn2:start>
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:timePeriod>
+         <!--Optional:-->
+         <urn1:sourceSystemHSAId></urn1:sourceSystemHSAId>
+         <!--Zero or more repetitions:-->
+         <urn1:careContactId></urn1:careContactId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetDiagnosis>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response"><con:configuration><path>count(//*:diagnosisHeader)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match"><con:configuration/></con:assertion><con:assertion type="XPath Match" name="Error"><con:configuration><path>count(//*:lastUnsuccessfulSynchError)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC6: Behörighet saknas i TAK" searchProperties="true" id="fdb35160-cf77-405b-9042-f0788f55099c"><con:settings/><con:testStep type="request" name="Laban Meijer"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetDiagnosisResponderBinding</con:interface><con:operation>GetDiagnosis</con:operation><con:request name="Laban Meijer" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-vp-sender-id" value="test"/>
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="test"/>
+&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2" xmlns:urn2="urn:riv:clinicalprocess:healthcond:description:2">
+   <soapenv:Header>
+      <urn:LogicalAddress>5565594230</urn:LogicalAddress>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:GetDiagnosis>
+         <!--Zero or more repetitions:-->
+         <urn1:careUnitHSAId></urn1:careUnitHSAId>
+         <urn1:patientId>
+            <urn2:id>194804032094</urn2:id>
+            <urn2:type>1.2.752.129.2.1.3.1</urn2:type>
+            <!--You may enter ANY elements at this point-->
+         </urn1:patientId>
+         <!--Optional:-->
+         <urn1:timePeriod>
+            <urn2:start></urn2:start>
+            <urn2:end></urn2:end>
+            <!--You may enter ANY elements at this point-->
+         </urn1:timePeriod>
+         <!--Optional:-->
+         <urn1:sourceSystemHSAId></urn1:sourceSystemHSAId>
+         <!--Zero or more repetitions:-->
+         <urn1:careContactId></urn1:careContactId>
+         <!--You may enter ANY elements at this point-->
+      </urn1:GetDiagnosis>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:assertion type="XPath Match" name="XPath Match"><con:configuration><path>count(//*:ProcessingStatusList)</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response"><con:configuration><path>count(//*:diagnosisHeader)</path><content>0</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>VP007 Authorization missing for serviceNamespace</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:description:GetDiagnosisResponder:2:GetDiagnosis"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>agg-env</con:name><con:value>https://test.esb.ntjp.se:443/vp/clinicalprocess/healthcond/description/GetDiagnosis/2/rivtabp21</con:value></con:property></con:properties></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
