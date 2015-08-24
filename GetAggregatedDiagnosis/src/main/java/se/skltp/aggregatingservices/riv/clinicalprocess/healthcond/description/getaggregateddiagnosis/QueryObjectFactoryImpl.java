@@ -12,48 +12,41 @@ import se.skltp.agp.service.api.QueryObjectFactory;
 
 public class QueryObjectFactoryImpl implements QueryObjectFactory {
 
-	private static final Logger log = LoggerFactory.getLogger(QueryObjectFactoryImpl.class);
-	private static final JaxbUtil ju = new JaxbUtil(GetDiagnosisType.class);
+    private static final Logger log = LoggerFactory.getLogger(QueryObjectFactoryImpl.class);
+    private static final JaxbUtil ju = new JaxbUtil(GetDiagnosisType.class);
 
-	private String eiServiceDomain;
-	public void setEiServiceDomain(String eiServiceDomain) {
-		this.eiServiceDomain = eiServiceDomain;
-	}
+    private String eiServiceDomain;
 
-	@SuppressWarnings("unused")
-	private String eiCategorization;
-	public void setEiCategorization(String eiCategorization) {
-		this.eiCategorization = eiCategorization;
-	}
+    public void setEiServiceDomain(String eiServiceDomain) {
+        this.eiServiceDomain = eiServiceDomain;
+    }
 
-	/**
-	 * Transformerar GetDiagnosis request till EI FindContent request enligt:
-	 * 
-	 * 1. patientId --> registeredResidentIdentification
-	 * 2. "riv:clinicalprocess:healthcond:description" --> serviceDomain
-	 * 3. "dia" --> categorization
-	 */
-	@Override
-	public QueryObject createQueryObject(Node node) {
-		
-		GetDiagnosisType request = (GetDiagnosisType)ju.unmarshal(node);
-		
-		if (log.isDebugEnabled()) log.debug("Transformed payload for pid: {}", request.getPatientId().getId());
+    private String eiCategorization;
 
-		FindContentType fc = new FindContentType();		
-		fc.setRegisteredResidentIdentification(request.getPatientId().getId());
-		fc.setServiceDomain(eiServiceDomain);
-		
-		//TKB 3.1	Uppdatering av engagemangsindex
-		//Infomängd enl. Tjänstekontrakt	Värde på Categorization
-		//GetCareDocumentation	voo
-		//GetDiagnosis			dia
-		//GetAlertInformation	upp
+    public void setEiCategorization(String eiCategorization) {
+        this.eiCategorization = eiCategorization;
+    }
 
-		fc.setCategorization(eiCategorization); 
-		
-		QueryObject qo = new QueryObject(fc, request);
+    /**
+     * Transformerar GetDiagnosis request till EI FindContent request enligt:
+     * 
+     * 1. patientId --> registeredResidentIdentification 
+     * 2. "riv:clinicalprocess:healthcond:description" --> serviceDomain 
+     * 3. "dia" --> categorization
+     */
+    @Override
+    public QueryObject createQueryObject(Node node) {
 
-		return qo;
-	}
+        GetDiagnosisType request = (GetDiagnosisType) ju.unmarshal(node);
+
+        log.debug("Transformed payload for pid: {}", request.getPatientId().getId());
+
+        FindContentType fc = new FindContentType();
+        fc.setRegisteredResidentIdentification(request.getPatientId().getId());
+        fc.setServiceDomain(eiServiceDomain);
+        fc.setCategorization(eiCategorization);
+        QueryObject qo = new QueryObject(fc, request);
+
+        return qo;
+    }
 }
