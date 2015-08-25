@@ -14,26 +14,26 @@ import se.skltp.agp.service.api.ResponseListFactory;
 
 public class ResponseListFactoryImpl implements ResponseListFactory {
 
-	private static final Logger log = LoggerFactory.getLogger(ResponseListFactoryImpl.class);
-	private static final JaxbUtil jaxbUtil = new JaxbUtil(GetDiagnosisResponseType.class, ProcessingStatusType.class);
-	private static final ObjectFactory OF = new ObjectFactory();
-	
-	@Override
-	public String getXmlFromAggregatedResponse(QueryObject queryObject, List<Object> aggregatedResponseList) {
-		GetDiagnosisResponseType aggregatedResponse = new GetDiagnosisResponseType();
+    private static final Logger log = LoggerFactory.getLogger(ResponseListFactoryImpl.class);
+    private static final JaxbUtil jaxbUtil = new JaxbUtil(GetDiagnosisResponseType.class, ProcessingStatusType.class);
+    private static final ObjectFactory OF = new ObjectFactory();
 
-	    for (Object object : aggregatedResponseList) {
-	    	GetDiagnosisResponseType response = (GetDiagnosisResponseType)object;
-			aggregatedResponse.getDiagnosis().addAll(response.getDiagnosis());
-		}
+    @Override
+    public String getXmlFromAggregatedResponse(QueryObject queryObject, List<Object> aggregatedResponseList) {
+        GetDiagnosisResponseType aggregatedResponse = new GetDiagnosisResponseType();
 
-	    if (log.isInfoEnabled()) {
-    		String subjectOfCareId = queryObject.getFindContent().getRegisteredResidentIdentification();
-        	log.info("Returning {} aggregated remisstatus for subject of care id {}", aggregatedResponse.getDiagnosis().size() ,subjectOfCareId);
+        for (Object object : aggregatedResponseList) {
+            GetDiagnosisResponseType response = (GetDiagnosisResponseType) object;
+            aggregatedResponse.getDiagnosis().addAll(response.getDiagnosis());
         }
-        
+
+        if (log.isInfoEnabled()) {
+            String subjectOfCareId = queryObject.getFindContent().getRegisteredResidentIdentification();
+            log.info("Returning {} aggregated remisstatus for subject of care id {}", aggregatedResponse.getDiagnosis().size(), subjectOfCareId);
+        }
+
         // Since the class createGetDiagnosisResponseType don't have an @XmlRootElement annotation
         // we need to use the ObjectFactory to add it.
         return jaxbUtil.marshal(OF.createGetDiagnosisResponse(aggregatedResponse));
-	}
+    }
 }

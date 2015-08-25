@@ -1,7 +1,6 @@
 package se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.description.getaggregateddiagnosis;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,20 +21,19 @@ public class RequestListFactoryImpl implements RequestListFactory {
     private static final Logger log = LoggerFactory.getLogger(RequestListFactoryImpl.class);
 
     /**
-     * Filtrera svarsposter från engagemangsindexet baserat parametrar i GetDiagnosis requestet. 
-     * Följande villkor måste vara sanna för att en svarspost från EI skall tas med i svaret:
+     * Filtrera svarsposter från engagemangsindexet baserat parametrar i GetDiagnosis requestet. Följande villkor måste vara sanna för att
+     * en svarspost från EI skall tas med i svaret:
      * 
-     * 1. request.fromDate <= ei-engagement.mostRecentContent <= reqest.toDate 
-     * 2. request.careUnitId.size == 0 or request.careUnitId.contains(ei-engagement.logicalAddress)
+     * request.careUnitId.size == 0 or request.careUnitId.contains(ei-engagement.logicalAddress)
      * 
-     * Svarsposter från engagemangsindexet som passerat filtreringen grupperas på fältet sourceSystem 
-     * samt postens fält logicalAddress (producenter-enhet) samlas i listan careUnitId per varje sourceSystem
+     * Svarsposter från engagemangsindexet som passerat filtreringen grupperas på fältet sourceSystem samt postens fält logicalAddress
+     * (producenter-enhet) samlas i listan careUnitId per varje sourceSystem
      * 
      * Ett anrop görs per funnet sourceSystem med följande värden i anropet:
      * 
      * 1. logicalAddress = sourceSystem (systemadressering) 
-     * 2. subjectOfCareId = orginal-request.subjectOfCareId 
-     * 3. careUnitId = listan av producenter som returnerats från engagemangsindexet för aktuellt source system
+     * 2. subjectOfCareId = original-request.subjectOfCareId 
+     * 3. careUnitId = listan av producenter som returnerats från engagemangsindexet för aktuellt source system 
      * 4. fromDate = orginal-request.fromDate 
      * 5. toDate = orginal-request.toDate
      */
@@ -67,9 +65,9 @@ public class RequestListFactoryImpl implements RequestListFactory {
         List<Object[]> reqList = new ArrayList<Object[]>();
 
         for (Entry<String, List<String>> entry : sourceSystem_pdlUnitList_map.entrySet()) {
-            String sourceSystem = entry.getKey();
-            log.info("Calling source system using logical address {} for subject of care id {}", sourceSystem, request.getPatientId().getId());
-            Object[] reqArr = new Object[] { sourceSystem, request };
+            String engagementSourceSystem = entry.getKey();
+            log.info("Calling source system using engagement logical address {} for subject of care id {}", engagementSourceSystem, request.getPatientId().getId());
+            Object[] reqArr = new Object[] { engagementSourceSystem, request };
             reqList.add(reqArr);
         }
 
@@ -84,12 +82,13 @@ public class RequestListFactoryImpl implements RequestListFactory {
         return careUnitId.equals(careUnit);
     }
 
-    private void addPdlUnitToSourceSystem(Map<String, List<String>> sourceSystem_pdlUnitList_map, String sourceSystem, String pdlUnitId) {
-        List<String> careUnitList = sourceSystem_pdlUnitList_map.get(sourceSystem);
+    private void addPdlUnitToSourceSystem(Map<String, List<String>> sourceSystem_pdlUnitList_map, String engagementSourceSystem,
+            String engagementLogicalAddress) {
+        List<String> careUnitList = sourceSystem_pdlUnitList_map.get(engagementSourceSystem);
         if (careUnitList == null) {
             careUnitList = new ArrayList<String>();
-            sourceSystem_pdlUnitList_map.put(sourceSystem, careUnitList);
+            sourceSystem_pdlUnitList_map.put(engagementSourceSystem, careUnitList);
         }
-        careUnitList.add(pdlUnitId);
+        careUnitList.add(engagementLogicalAddress);
     }
 }
