@@ -9,7 +9,7 @@
   <parent>
       <groupId>se.skltp.commons</groupId>
       <artifactId>skltp-commons-mule-parent</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
   </parent>
 
   <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.description</groupId>
@@ -19,16 +19,16 @@
   <name>GetAggregatedDiagnosis-parent</name>
 
   <scm>
-    <url>http://github.com/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedDiagnosis</url>
     <connection>scm:git:git://github.com/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedDiagnosis.git</connection>
     <developerConnection>scm:git:git://github.com/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedDiagnosis.git</developerConnection>
-    <tag>v1.0.0</tag>
+    <url>http://github.com/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedDiagnosis</url>
+    <tag>HEAD</tag>
   </scm>
 
   <modules>
     <module>GetAggregatedDiagnosis</module>
-    <module>GetAggregatedDiagnosis-schemas</module>
     <module>GetAggregatedDiagnosis-teststub</module>
+    <module>GetAggregatedDiagnosis-schemas</module>
   </modules>
 
   <build>
