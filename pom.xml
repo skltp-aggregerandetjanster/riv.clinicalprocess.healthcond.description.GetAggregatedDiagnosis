@@ -18,6 +18,10 @@
   <packaging>pom</packaging>
   <name>GetAggregatedDiagnosis-parent</name>
 
+  <properties>
+    <skltp.agp.version>1.3.7</skltp.agp.version>
+  </properties>
+
   <scm>
     <connection>scm:git:git://github.com/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedDiagnosis.git</connection>
     <developerConnection>scm:git:git://github.com/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedDiagnosis.git</developerConnection>
