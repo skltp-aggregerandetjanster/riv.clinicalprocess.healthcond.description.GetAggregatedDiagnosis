@@ -9,7 +9,7 @@
   <parent>
     <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.description</groupId>
     <artifactId>GetAggregatedDiagnosis-parent</artifactId>
-    <version>1.0.3-RC1-SNAPSHOT</version>
+    <version>1.1.0-RC1-SNAPSHOT</version>
   </parent>
 
   <artifactId>GetAggregatedDiagnosis</artifactId>
@@ -38,7 +38,7 @@
 
     <dependency>
       <groupId>org.soitoolkit.commons.poms.mule-dependencies</groupId>
-      <artifactId>soitoolkit-mule-3.3.1-dependencies</artifactId>
+      <artifactId>soitoolkit-mule-3.7.0-dependencies</artifactId>
       <version>${soitoolkit.version}</version>
       <type>pom</type>
     </dependency>
@@ -63,12 +63,6 @@
     <!-- Mockito -->
     <dependency>
       <groupId>org.mockito</groupId>
-      <artifactId>mockito-all</artifactId>
-      <scope>test</scope>
-      <version>1.8.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
       <scope>test</scope>
       <version>1.8.5</version>
@@ -88,6 +82,24 @@
     </resources>
 
     <plugins>
+      <!-- setup/debug of dependencies: dump all dependencies for inspection into dir target/dependency -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>copy-dependencies</id>
+            <!--
+            <phase>package</phase>
+            -->
+            <phase>process-resources</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
       <plugin>
         <!-- Add mule-nature to the eclipse-.project-file -->
         <artifactId>maven-eclipse-plugin</artifactId>
@@ -192,7 +204,7 @@
             strangely named and with a bad extension -->
           <classifier>core</classifier>
           <excludes>
-            <exclude>log4j.xml</exclude>
+            <exclude>log4j2.xml</exclude>
           </excludes>
         </configuration>
         <executions>
@@ -213,14 +225,13 @@
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-              <!--<outputDirectory>target/classes</outputDirectory> -->
-              <outputDirectory>${project.build.outputDirectory}</outputDirectory>
+               <overwrite>true</overwrite>
+               <outputDirectory>${project.build.outputDirectory}</outputDirectory>
               <resources>
                 <resource>
                   <directory>src/environment</directory>
                   <includes>
-                    <include>log4j.xml</include>
-                    <include>log4j.dtd</include>
+                    <include>log4j2.xml</include>
                   </includes>
                 </resource>
               </resources>
