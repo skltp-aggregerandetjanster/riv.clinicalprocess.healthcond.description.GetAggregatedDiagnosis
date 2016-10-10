@@ -21,6 +21,8 @@
   <properties>
     <mule.version>3.7.0</mule.version>
     <skltp.agp.version>2.2</skltp.agp.version>
+    <!-- Turn off strict checking of javadoc tags for Java 8 -->
+    <additionalparam>-Xdoclint:none</additionalparam>
   </properties>
 
   <scm>
