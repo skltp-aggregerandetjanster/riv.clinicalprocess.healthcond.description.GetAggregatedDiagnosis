@@ -9,7 +9,7 @@
   <parent>
       <groupId>se.skltp.commons</groupId>
       <artifactId>skltp-commons-mule-parent</artifactId>
-      <version>2.0.2</version>
+      <version>2.0.3-RC3</version>
   </parent>
 
   <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.description</groupId>
@@ -24,8 +24,8 @@
   </properties>
 
   <scm>
-    <connection>scm:git:git://github.com/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedDiagnosis.git</connection>
-    <developerConnection>scm:git:git://github.com/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedDiagnosis.git</developerConnection>
+    <connection>scm:git:https://github.com:443/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedDiagnosis.git</connection>
+    <developerConnection>scm:git:https://github.com:443/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedDiagnosis.git</developerConnection>
     <url>http://github.com/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedDiagnosis</url>
     <tag>HEAD</tag>
   </scm>
@@ -79,7 +79,7 @@
           <configuration>
             <autoVersionSubmodules>true</autoVersionSubmodules>
             <tagNameFormat>v@{project.version}</tagNameFormat>
-            <pushChanges>false</pushChanges>
+            <pushChanges>true</pushChanges>
             <localCheckout>true</localCheckout>
           </configuration>
         </plugin>
