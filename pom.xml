@@ -14,13 +14,13 @@
 
   <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.description</groupId>
   <artifactId>GetAggregatedDiagnosis-parent</artifactId>
-  <version>1.2.3-SNAPSHOT</version>
+  <version>1.2.4-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>GetAggregatedDiagnosis-parent</name>
 
   <properties>
     <mule.version>3.7.0</mule.version>
-    <skltp.agp.version>2.3.4-RC1</skltp.agp.version>
+    <skltp.agp.version>2.3.4</skltp.agp.version>
   </properties>
 
   <scm>
