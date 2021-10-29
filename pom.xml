@@ -6,19 +6,37 @@
   <parent>
     <artifactId>agp-parent</artifactId>
     <groupId>se.skltp.agp</groupId>
-    <version>3.0.0-RC1</version>
+    <version>3.0.0</version>
   </parent>
 
   <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.description</groupId>
   <artifactId>GetAggregatedDiagnosis-v2</artifactId>
-  <version>2.0.0</version>
+  <version>2.1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>GetAggregatedDiagnosis-v2</name>
 
   <properties>
-    <agp-parent.version>3.0.0-RC2</agp-parent.version>
+    <agp-parent.version>3.0.0</agp-parent.version>
     <apache-cfx.version>3.2.7</apache-cfx.version>
   </properties>
+
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.5.1</version>
+          <configuration>
+            <autoVersionSubmodules>true</autoVersionSubmodules>
+            <tagNameFormat>v@{project.version}</tagNameFormat>
+            <localCheckout>true</localCheckout>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
 
   <scm>
     <connection>
@@ -30,7 +48,7 @@
     <url>
       http://github.com/skltp-aggregerandetjanster/riv.clinicalprocess.healthcond.description.GetAggregatedDiagnosis
     </url>
-    <tag>GetAggregatedDiagnosis-v2-2.0.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <modules>
