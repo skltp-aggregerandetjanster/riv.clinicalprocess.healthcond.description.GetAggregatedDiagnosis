@@ -5,7 +5,7 @@
   <parent>
     <groupId>se.skltp.aggregatingservices.riv.clinicalprocess.healthcond.description</groupId>
     <artifactId>GetAggregatedDiagnosis-v2</artifactId>
-    <version>3.0.0</version>
+    <version>3.0.1</version>
   </parent>
   <artifactId>GetAggregatedDiagnosis-v2-schemas</artifactId>
   <properties>
